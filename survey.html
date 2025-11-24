@@ -1,0 +1,884 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="x-ua-compatible" content="ie=edge">
+   <title>Humanity Advisory Group </title>
+
+     <meta property="og:title" content="Humanity Advisory Group">
+  <meta property="og:description" content="Guiding healthcare forward with human-centered insight. Because meaningful change starts with understanding what matters most.">
+  <meta property="og:image" content="https://humanityadvisorygroup.com/assets/img/bg/hero-bg-1.2.jpg">
+  <meta property="og:url" content="https://humanityadvisorygroup.com">
+  <meta property="og:type" content="website">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="robots" content="noindex, nofollow">
+
+   <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+   <link rel="stylesheet" href="assets/css/bootstrap.css">
+   <link rel="stylesheet" href="assets/css/meanmenu.css">
+   <link rel="stylesheet" href="assets/css/animate.css">
+   <link rel="stylesheet" href="assets/css/swiper-bundle.css">
+   <link rel="stylesheet" href="assets/css/slick.css">
+   <link rel="stylesheet" href="assets/css/backtotop.css">
+   <link rel="stylesheet" href="assets/css/magnific-popup.css">
+   <link rel="stylesheet" href="assets/css/nice-select.css">
+   <link rel="stylesheet" href="assets/css/ui-icon.css">
+   <link rel="stylesheet" href="assets/css/font-awesome-pro.css">
+   <link rel="stylesheet" href="assets/css/spacing.css">
+   <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+   <div id="loading">
+      <div id="loading-center">
+         <div id="loading-center-absolute">
+         </div>
+      </div>
+   </div>
+   <div class="progress-wrap">
+      <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+         <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+      </svg>
+   </div>
+
+   <div class="mouseCursor cursor-outer"></div>
+   <div class="mouseCursor cursor-inner"><span>Drag</span></div>
+
+   <header>
+      <div id="header-sticky" class="header__area header__transparent pr-90 pl-90 header-sticky-active">
+         <div class="header__main" id="header-sticky">
+            <div class="container-fluid">
+               <div class="row align-items-center">
+                  <div class="col-lg-2 col-md-4 col-7">
+
+                     <div class="logo">
+                        <a href="index.html">
+                           <img src="assets/img/logo/logo.png" alt="logo">
+                        </a>
+                     </div>
+                  </div>
+                  <div class=" col-lg-7 col-md-4 d-none d-md-block">
+                     <div class="main-menu text-center">
+                        <nav id="mobile-menu">
+                           <ul>
+                              <li>
+                                 <a href="index.html">Home</a>
+                              </li>
+                              <li>
+                                 <a href="about.html">About us</a>
+                              </li>
+
+                              <li>
+                                 <a href="#">Our Team</a>
+                              </li>
+                              <li>
+                                 <a href="insights.html">Insights & Trends</a>
+                              </li>
+                           </ul>
+                        </nav>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </header>
+
+   <div class="body-overlay"></div>
+
+
+   <main>
+      <div class="container pt-140 pb-110">
+         <div class="row">
+               <div class="col-12">
+                  <div class="tp-section-wrapper text-center mb-70">
+                     <h2 class="tp-section-title">Inquiry Questionnaire</h2>
+                  </div>
+               </div>
+         </div>
+         <div class="row justify-content-center">
+               <div class="col-lg-8">
+                  <form id="inquiryForm" action="https://formspree.io/f/movzavbw" method="POST">
+                     <div id="step1">
+                           <h4>What Service are you interested in?</h4>
+                           <div class="form-check">
+                              <input class="form-check-input" type="radio" name="service" id="strategic" value="strategic">
+                              <label class="form-check-label" for="strategic">Strategic Services</label>
+                           </div>
+                           <div class="form-check">
+                              <input class="form-check-input" type="radio" name="service" id="facility" value="facility">
+                              <label class="form-check-label" for="facility">Facility Optimization</label>
+                           </div>
+                           <div class="form-check">
+                              <input class="form-check-input" type="radio" name="service" id="global" value="global">
+                              <label class="form-check-label" for="global">Global Healthcare Advisory Services</label>
+                           </div>
+                           <div class="form-check">
+                              <input class="form-check-input" type="radio" name="service" id="pharmacy" value="pharmacy">
+                              <label class="form-check-label" for="pharmacy">Humanity Pharmacy Group</label>
+                           </div>
+                           <button type="button" class="btn btn-primary mt-3" onclick="handleServiceSelection()">Next</button>
+                     </div>
+
+                     <div id="strategicQuestionnaire" style="display: none;">
+                           <h3>Strategic Advising Questionnaire</h3>
+                           
+                           <h4>1. Organization Context</h4>
+                           <div class="mb-3">
+                              <label class="form-label">1.1 What is the name of your organization?</label>
+                              <input type="text" class="form-control" name="org_name_strategic">
+                           </div>
+                           <div class="mb-3">
+                              <label class="form-label">1.2 Which best describes your organization? (Select all that apply)</label>
+                              <div class="form-check"><input class="form-check-input" type="checkbox" name="org_type" value="Nonprofit organization"><label>Nonprofit organization</label></div>
+                              <div class="form-check"><input class="form-check-input" type="checkbox" name="org_type" value="For-profit company"><label>For-profit company</label></div>
+                              <div class="form-check"><input class="form-check-input" type="checkbox" name="org_type" value="Government or public agency"><label>Government or public agency</label></div>
+                              <div class="form-check"><input class="form-check-input" type="checkbox" name="org_type" value="Healthcare organization"><label>Healthcare organization</label></div>
+                              <div class="form-check"><input class="form-check-input" type="checkbox" name="org_type" value="Education institution"><label>Education institution</label></div>
+                              <div class="form-check"><input class="form-check-input" type="checkbox" name="org_type" value="Startup or early-stage venture"><label>Startup or early-stage venture</label></div>
+                              <div class="form-check"><input class="form-check-input" type="checkbox" name="org_type" value="Foundation or philanthropic entity"><label>Foundation or philanthropic entity</label></div>
+                              <div class="form-check"><input class="form-check-input" type="checkbox" onchange="toggleOther(this, 'orgTypeOther')"><label>Other (please specify)</label><input type="text" class="form-control mt-2" id="orgTypeOther" style="display: none;" name="org_type_other"></div>
+                           </div>
+                           <div class="mb-3">
+                              <label class="form-label">1.3 What is the size of your organization?</label>
+                              <div class="form-check"><input class="form-check-input" type="radio" name="orgSize" value="1–10 employees"><label>1–10 employees</label></div>
+                              <div class="form-check"><input class="form-check-input" type="radio" name="orgSize" value="11–50 employees"><label>11–50 employees</label></div>
+                              <div class="form-check"><input class="form-check-input" type="radio" name="orgSize" value="51–200 employees"><label>51–200 employees</label></div>
+                              <div class="form-check"><input class="form-check-input" type="radio" name="orgSize" value="201–500 employees"><label>201–500 employees</label></div>
+                              <div class="form-check"><input class="form-check-input" type="radio" name="orgSize" value="501–1,000 employees"><label>501–1,000 employees</label></div>
+                              <div class="form-check"><input class="form-check-input" type="radio" name="orgSize" value="More than 1,000 employees"><label>More than 1,000 employees</label></div>
+                           </div>
+                           <div class="mb-3">
+                              <label class="form-label">1.4 Which departments or teams will be most impacted by this strategic advising engagement? (Select all that apply)</label>
+                              <div class="form-check"><input class="form-check-input" type="checkbox" name="impacted_teams" value="Executive leadership"><label>Executive leadership</label></div>
+                              <div class="form-check"><input class="form-check-input" type="checkbox" name="impacted_teams" value="Operations"><label>Operations</label></div>
+                              <div class="form-check"><input class="form-check-input" type="checkbox" name="impacted_teams" value="Finance / Administration"><label>Finance / Administration</label></div>
+                              <div class="form-check"><input class="form-check-input" type="checkbox" name="impacted_teams" value="Programs / Service Delivery"><label>Programs / Service Delivery</label></div>
+                              <div class="form-check"><input class="form-check-input" type="checkbox" name="impacted_teams" value="Human Resources"><label>Human Resources</label></div>
+                              <div class="form-check"><input class="form-check-input" type="checkbox" name="impacted_teams" value="Marketing / Communications"><label>Marketing / Communications</label></div>
+                              <div class="form-check"><input class="form-check-input" type="checkbox" name="impacted_teams" value="Technology / IT"><label>Technology / IT</label></div>
+                              <div class="form-check"><input class="form-check-input" type="checkbox" onchange="toggleOther(this, 'impactedTeamsOther')"><label>Other (please specify)</label><input type="text" class="form-control mt-2" id="impactedTeamsOther" style="display: none;" name="impacted_teams_other"></div>
+                           </div>
+
+                           <h4>2. Strategic Priorities</h4>
+                           <div class="mb-3">
+                              <label class="form-label">2.1 What are your primary goals for engaging in strategic advising? (Select all that apply)</label>
+                              <div class="form-check"><input class="form-check-input" type="checkbox" name="strategic_goals" value="Develop or refine organizational strategy"><label>Develop or refine organizational strategy</label></div>
+                              <div class="form-check"><input class="form-check-input" type="checkbox" name="strategic_goals" value="Improve operational effectiveness"><label>Improve operational effectiveness</label></div>
+                              <div class="form-check"><input class="form-check-input" type="checkbox" name="strategic_goals" value="Strengthen leadership or governance"><label>Strengthen leadership or governance</label></div>
+                              <div class="form-check"><input class="form-check-input" type="checkbox" name="strategic_goals" value="Enhance decision-making processes"><label>Enhance decision-making processes</label></div>
+                              <div class="form-check"><input class="form-check-input" type="checkbox" name="strategic_goals" value="Prepare for growth, scaling, or restructuring"><label>Prepare for growth, scaling, or restructuring</label></div>
+                              <div class="form-check"><input class="form-check-input" type="checkbox" name="strategic_goals" value="Resolve internal or cross-team challenges"><label>Resolve internal or cross-team challenges</label></div>
+                              <div class="form-check"><input class="form-check-input" type="checkbox" name="strategic_goals" value="Improve financial sustainability"><label>Improve financial sustainability</label></div>
+                              <div class="form-check"><input class="form-check-input" type="checkbox" onchange="toggleOther(this, 'goalsOther')"><label>Other (please specify)</label><input type="text" class="form-control mt-2" id="goalsOther" style="display: none;" name="strategic_goals_other"></div>
+                           </div>
+                           <div class="mb-3">
+                              <label class="form-label">2.2 What is your timeline for beginning this engagement?</label>
+                              <div class="form-check"><input class="form-check-input" type="radio" name="timeline" value="Immediately"><label>Immediately</label></div>
+                              <div class="form-check"><input class="form-check-input" type="radio" name="timeline" value="Within the next 1–3 months"><label>Within the next 1–3 months</label></div>
+                              <div class="form-check"><input class="form-check-input" type="radio" name="timeline" value="Within the next 3–6 months"><label>Within the next 3–6 months</label></div>
+                              <div class="form-check"><input class="form-check-input" type="radio" name="timeline" value="No fixed timeline—flexible"><label>No fixed timeline—flexible</label></div>
+                           </div>
+                           <div class="mb-3">
+                              <label class="form-label">2.3 Which strategic challenges is your organization currently navigating? (Select all that apply)</label>
+                              <div class="form-check"><input class="form-check-input" type="checkbox" name="strategic_challenges" value="Lack of clear strategic direction"><label>Lack of clear strategic direction</label></div>
+                              <div class="form-check"><input class="form-check-input" type="checkbox" name="strategic_challenges" value="Misalignment between teams or leadership"><label>Misalignment between teams or leadership</label></div>
+                              <div class="form-check"><input class="form-check-input" type="checkbox" name="strategic_challenges" value="Inefficient internal processes"><label>Inefficient internal processes</label></div>
+                              <div class="form-check"><input class="form-check-input" type="checkbox" name="strategic_challenges" value="Financial instability or revenue concerns"><label>Financial instability or revenue concerns</label></div>
+                              <div class="form-check"><input class="form-check-input" type="checkbox" name="strategic_challenges" value="Need for organizational restructuring"><label>Need for organizational restructuring</label></div>
+                              <div class="form-check"><input class="form-check-input" type="checkbox" name="strategic_challenges" value="Stakeholder or board misalignment"><label>Stakeholder or board misalignment</label></div>
+                              <div class="form-check"><input class="form-check-input" type="checkbox" name="strategic_challenges" value="Rapid growth or scaling challenges"><label>Rapid growth or scaling challenges</label></div>
+                              <div class="form-check"><input class="form-check-input" type="checkbox" name="strategic_challenges" value="Culture, communication, or morale issues"><label>Culture, communication, or morale issues</label></div>
+                              <div class="form-check"><input class="form-check-input" type="checkbox" onchange="toggleOther(this, 'challengesOther')"><label>Other (please specify)</label><input type="text" class="form-control mt-2" id="challengesOther" style="display: none;" name="strategic_challenges_other"></div>
+                           </div>
+
+                           <h4>3. Stakeholders & Decision-Making</h4>
+                           <div class="mb-3">
+                              <label class="form-label">3.1 Who will serve as the primary decision-makers for this engagement? (Select all that apply)</label>
+                              <div class="form-check"><input class="form-check-input" type="checkbox" name="decision_makers" value="CEO / Executive Director"><label>CEO / Executive Director</label></div>
+                              <div class="form-check"><input class="form-check-input" type="checkbox" name="decision_makers" value="Senior leadership team"><label>Senior leadership team</label></div>
+                              <div class="form-check"><input class="form-check-input" type="checkbox" name="decision_makers" value="Board of Directors"><label>Board of Directors</label></div>
+                              <div class="form-check"><input class="form-check-input" type="checkbox" name="decision_makers" value="Department heads"><label>Department heads</label></div>
+                              <div class="form-check"><input class="form-check-input" type="checkbox" name="decision_makers" value="External advisors or partners"><label>External advisors or partners</label></div>
+                              <div class="form-check"><input class="form-check-input" type="checkbox" onchange="toggleOther(this, 'decisionMakersOther')"><label>Other (please specify)</label><input type="text" class="form-control mt-2" id="decisionMakersOther" style="display: none;" name="decision_makers_other"></div>
+                           </div>
+                           <div class="mb-3">
+                              <label class="form-label">3.2 How involved would your leadership team like to be in the advising process?</label>
+                              <div class="form-check"><input class="form-check-input" type="radio" name="involvement" value="Highly involved—participating in all sessions"><label>Highly involved—participating in all sessions</label></div>
+                              <div class="form-check"><input class="form-check-input" type="radio" name="involvement" value="Moderately involved—engaged at key milestones"><label>Moderately involved—engaged at key milestones</label></div>
+                              <div class="form-check"><input class="form-check-input" type="radio" name="involvement" value="Minimally involved—receiving updates only"><label>Minimally involved—receiving updates only</label></div>
+                              <div class="form-check"><input class="form-check-input" type="radio" name="involvement" value="Not sure yet"><label>Not sure yet</label></div>
+                           </div>
+
+                           <h4>4. Additional Information</h4>
+                           <div class="mb-3">
+                              <label class="form-label">4.1 Have you previously worked with a strategic advisor or consultant?</label>
+                              <div class="form-check"><input class="form-check-input" type="radio" name="prevAdvisor" value="Yes"><label>Yes</label></div>
+                              <div class="form-check"><input class="form-check-input" type="radio" name="prevAdvisor" value="No"><label>No</label></div>
+                              <div class="form-check"><input class="form-check-input" type="radio" name="prevAdvisor" value="Not sure"><label>Not sure</label></div>
+                           </div>
+                           <div class="mb-3">
+                              <label class="form-label">4.2 Is there any additional context that would help us prepare for our initial conversation?</label>
+                              <div class="form-check"><input class="form-check-input" type="radio" name="addContext" value="yes" onchange="toggleOther(this, 'contextDetails', true)"><label>Yes (please provide details)</label><textarea class="form-control mt-2" id="contextDetails" style="display: none;" name="add_context_details"></textarea></div>
+                              <div class="form-check"><input class="form-check-input" type="radio" name="addContext" value="no"><label>No, not at this time</label></div>
+                           </div>
+                           <button type="button" class="btn btn-primary mt-3 questionnaire-next-btn" onclick="showStep('contactScreen')">Next</button>
+                     </div>
+
+                     <div id="facilityQuestionnaire" style="display: none;">
+                        <h3>Facility Optimization Questionnaire</h3>
+                        
+                        <h4>1. Organization Overview</h4>
+                        <div class="mb-3">
+                           <label class="form-label">1.1 What is the name of your organization?</label>
+                           <input type="text" class="form-control" name="facility_org_name">
+                        </div>
+                        <div class="mb-3">
+                           <label class="form-label">1.2 What type of healthcare facility are you? (Select all that apply)</label>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="facility_type" value="Acute care hospital"><label>Acute care hospital</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="facility_type" value="Outpatient clinic"><label>Outpatient clinic</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="facility_type" value="Specialty center"><label>Specialty center</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="facility_type" value="Long-term care facility"><label>Long-term care facility</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="facility_type" value="Ambulatory facility"><label>Ambulatory facility</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="facility_type" value="Integrated health system"><label>Integrated health system</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" onchange="toggleOther(this, 'facilityTypeOther')"><label>Other (please specify)</label><input type="text" class="form-control mt-2" id="facilityTypeOther" style="display: none;" name="facility_type_other"></div>
+                        </div>
+                        <div class="mb-3">
+                           <label class="form-label">1.3 How many sites or campuses do you operate?</label>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="sites" value="1"><label>1</label></div>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="sites" value="2–3"><label>2–3</label></div>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="sites" value="4–6"><label>4–6</label></div>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="sites" value="7–10"><label>7–10</label></div>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="sites" value="More than 10"><label>More than 10</label></div>
+                        </div>
+                        <div class="mb-3">
+                           <label class="form-label">1.4 Where are your main facilities located?</label>
+                           <input type="text" class="form-control" name="facility_location">
+                        </div>
+
+                        <h4>2. Current Facility Landscape</h4>
+                        <div class="mb-3">
+                           <label class="form-label">2.1 What are your primary goals regarding facility optimization? (Select all that apply)</label>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="facility_goals" value="Cost reduction"><label>Cost reduction</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="facility_goals" value="Better space utilization"><label>Better space utilization</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="facility_goals" value="Modernization or upgrades"><label>Modernization or upgrades</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="facility_goals" value="Regulatory or compliance improvements"><label>Regulatory or compliance improvements</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="facility_goals" value="Improved patient experience"><label>Improved patient experience</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="facility_goals" value="Operational efficiency"><label>Operational efficiency</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="facility_goals" value="Sustainability or energy efficiency"><label>Sustainability or energy efficiency</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" onchange="toggleOther(this, 'facilityGoalsOther')"><label>Other (please specify)</label><input type="text" class="form-control mt-2" id="facilityGoalsOther" style="display: none;" name="facility_goals_other"></div>
+                        </div>
+                        <div class="mb-3">
+                           <label class="form-label">2.2 When were your main facilities last renovated or evaluated for operational efficiency?</label>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="lastRenovated" value="Within the last 1–3 years"><label>Within the last 1–3 years</label></div>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="lastRenovated" value="Within the last 4–7 years"><label>Within the last 4–7 years</label></div>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="lastRenovated" value="Within the last 8–10 years"><label>Within the last 8–10 years</label></div>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="lastRenovated" value="More than 10 years ago"><label>More than 10 years ago</label></div>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="lastRenovated" value="Not sure / No formal evaluation conducted"><label>Not sure / No formal evaluation conducted</label></div>
+                        </div>
+                        <div class="mb-3">
+                           <label class="form-label">2.3 Are you currently facing any facility-related challenges? (Select all that apply)</label>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="facility_challenges" value="Underutilized space"><label>Underutilized space</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="facility_challenges" value="Inefficient patient flow"><label>Inefficient patient flow</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="facility_challenges" value="Aging or outdated infrastructure"><label>Aging or outdated infrastructure</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="facility_challenges" value="Compliance or regulatory concerns"><label>Compliance or regulatory concerns</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="facility_challenges" value="Capacity limitations"><label>Capacity limitations</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="facility_challenges" value="Deferred maintenance"><label>Deferred maintenance</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="facility_challenges" value="Technology or equipment gaps"><label>Technology or equipment gaps</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="facility_challenges" value="No significant challenges at this time"><label>No significant challenges at this time</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" onchange="toggleOther(this, 'facilityChallengesOther')"><label>Other (please specify)</label><input type="text" class="form-control mt-2" id="facilityChallengesOther" style="display: none;" name="facility_challenges_other"></div>
+                        </div>
+                        <button type="button" class="btn btn-primary mt-3 questionnaire-next-btn" onclick="showStep('contactScreen')">Next</button>
+                     </div>
+
+                     <div id="globalQuestionnaire" style="display: none;">
+                        <h3>Global Healthcare Advisory Services Questionnaire</h3>
+                        
+                        <h4>1. Organization Overview</h4>
+                        <div class="mb-3">
+                           <label class="form-label">1.1 What is the name of your organization?</label>
+                           <input type="text" class="form-control" name="global_org_name">
+                        </div>
+                        <div class="mb-3">
+                           <label class="form-label">1.2 What type of healthcare entity are you? (Select all that apply)</label>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="entity_type" value="Hospital group or health system"><label>Hospital group or health system</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="entity_type" value="Government agency"><label>Government agency</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="entity_type" value="Non-governmental organization (NGO)"><label>Non-governmental organization (NGO)</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="entity_type" value="Academic medical center"><label>Academic medical center</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="entity_type" value="Private investor or investment firm"><label>Private investor or investment firm</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="entity_type" value="Life sciences or biotech company"><label>Life sciences or biotech company</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="entity_type" value="Digital health / health technology company"><label>Digital health / health technology company</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" onchange="toggleOther(this, 'globalEntityTypeOther')"><label>Other (please specify)</label><input type="text" class="form-control mt-2" id="globalEntityTypeOther" style="display: none;" name="entity_type_other"></div>
+                        </div>
+                        <div class="mb-3">
+                           <label class="form-label">1.3 In which countries or regions do you currently operate?</label>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="current_regions" value="North America"><label>North America</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="current_regions" value="Latin America & Caribbean"><label>Latin America & Caribbean</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="current_regions" value="Europe"><label>Europe</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="current_regions" value="Middle East"><label>Middle East</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="current_regions" value="Africa"><label>Africa</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="current_regions" value="South Asia"><label>South Asia</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="current_regions" value="East Asia"><label>East Asia</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="current_regions" value="Oceania"><label>Oceania</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" onchange="toggleOther(this, 'globalRegionsOther')"><label>Other (please specify)</label><input type="text" class="form-control mt-2" id="globalRegionsOther" style="display: none;" name="current_regions_other"></div>
+                        </div>
+                        <div class="mb-3">
+                           <label class="form-label">1.4 Are you planning to expand into new international markets?</label>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="globalExpansion" value="yes" onchange="toggleOther(this, 'globalExpansionDetails', true)"><label>Yes (please specify countries/regions)</label><input type="text" class="form-control mt-2" id="globalExpansionDetails" style="display: none;" name="global_expansion_details"></div>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="globalExpansion" value="no"><label>No</label></div>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="globalExpansion" value="Considering but not yet confirmed"><label>Considering but not yet confirmed</label></div>
+                        </div>
+
+                        <h4>2. Strategic Objectives</h4>
+                        <div class="mb-3">
+                           <label class="form-label">2.1 What are your primary goals for seeking global healthcare advisory support? (Select all that apply)</label>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="global_goals" value="International market entry"><label>International market entry</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="global_goals" value="Partnership development"><label>Partnership development</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="global_goals" value="Policy alignment with global standards"><label>Policy alignment with global standards</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="global_goals" value="System benchmarking and performance assessment"><label>System benchmarking and performance assessment</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="global_goals" value="Health system strengthening or reform"><label>Health system strengthening or reform</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="global_goals" value="Strategic planning for global expansion"><label>Strategic planning for global expansion</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" onchange="toggleOther(this, 'globalGoalsOther')"><label>Other (please specify)</label><input type="text" class="form-control mt-2" id="globalGoalsOther" style="display: none;" name="global_goals_other"></div>
+                        </div>
+                        <div class="mb-3">
+                           <label class="form-label">2.2 What challenges or barriers are you currently encountering in international operations or expansion? (Select all that apply)</label>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="global_challenges" value="Regulatory complexity"><label>Regulatory complexity</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="global_challenges" value="Lack of market insights or data"><label>Lack of market insights or data</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="global_challenges" value="Difficulty forming local partnerships"><label>Difficulty forming local partnerships</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="global_challenges" value="Cultural or operational integration issues"><label>Cultural or operational integration issues</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="global_challenges" value="Funding or investment constraints"><label>Funding or investment constraints</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="global_challenges" value="Limited internal capacity or expertise"><label>Limited internal capacity or expertise</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" onchange="toggleOther(this, 'globalChallengesOther')"><label>Other (please specify)</label><input type="text" class="form-control mt-2" id="globalChallengesOther" style="display: none;" name="global_challenges_other"></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="global_challenges" value="No major challenges at this time"><label>No major challenges at this time</label></div>
+                        </div>
+                        <div class="mb-3">
+                           <label class="form-label">2.3 Have you previously engaged consultants or advisors for global healthcare projects?</label>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="globalPrevAdvisors" value="Yes — with positive outcomes"><label>Yes — with positive outcomes</label></div>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="globalPrevAdvisors" value="Yes — mixed or limited outcomes"><label>Yes — mixed or limited outcomes</label></div>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="globalPrevAdvisors" value="Yes — but unsure of impact"><label>Yes — but unsure of impact</label></div>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="globalPrevAdvisors" value="No"><label>No</label></div>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="globalPrevAdvisors" value="Prefer not to say"><label>Prefer not to say</label></div>
+                        </div>
+
+                        <h4>3. Areas of Advisory Interest</h4>
+                        <div class="mb-3">
+                           <label class="form-label">(Select all that apply)</label>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="advisory_interest" value="Market entry and feasibility analysis"><label>Market entry and feasibility analysis</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="advisory_interest" value="Cross-border partnerships and joint ventures"><label>Cross-border partnerships and joint ventures</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="advisory_interest" value="International accreditation and quality standards"><label>International accreditation and quality standards</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="advisory_interest" value="Health system development and reform advisory"><label>Health system development and reform advisory</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="advisory_interest" value="Global health policy and regulatory navigation"><label>Global health policy and regulatory navigation</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="advisory_interest" value="Investment strategy and due diligence"><label>Investment strategy and due diligence</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="advisory_interest" value="Workforce development and international talent mobility"><label>Workforce development and international talent mobility</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="advisory_interest" value="Global digital health and innovation strategy"><label>Global digital health and innovation strategy</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" onchange="toggleOther(this, 'globalInterestOther')"><label>Other (please specify)</label><input type="text" class="form-control mt-2" id="globalInterestOther" style="display: none;" name="advisory_interest_other"></div>
+                        </div>
+
+                        <h4>4. Engagement Scope</h4>
+                        <div class="mb-3">
+                           <label class="form-label">4.1 What scale of engagement are you considering?</label>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="globalEngagementScale" value="Single-country project"><label>Single-country project</label></div>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="globalEngagementScale" value="Multi-country regional expansion"><label>Multi-country regional expansion</label></div>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="globalEngagementScale" value="Global multi-site advisory"><label>Global multi-site advisory</label></div>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="globalEngagementScale" value="Not sure yet"><label>Not sure yet</label></div>
+                        </div>
+                        <div class="mb-3">
+                           <label class="form-label">4.2 What is your preferred timeline for this engagement?</label>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="globalTimeline" value="Immediately"><label>Immediately</label></div>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="globalTimeline" value="Within the next 1–3 months"><label>Within the next 1–3 months</label></div>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="globalTimeline" value="Within the next 3–6 months"><label>Within the next 3–6 months</label></div>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="globalTimeline" value="Flexible / no set timeline"><label>Flexible / no set timeline</label></div>
+                        </div>
+                        <div class="mb-3">
+                           <label class="form-label">4.3 Who are the key stakeholders or decision-makers involved? (Select all that apply)</label>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="global_stakeholders" value="CEO / Executive leadership"><label>CEO / Executive leadership</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="global_stakeholders" value="Board of Directors"><label>Board of Directors</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="global_stakeholders" value="Ministry of Health or government partners"><label>Ministry of Health or government partners</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="global_stakeholders" value="Regional or in-country leadership"><label>Regional or in-country leadership</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="global_stakeholders" value="Investors or funding partners"><label>Investors or funding partners</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" onchange="toggleOther(this, 'globalStakeholdersOther')"><label>Other (please specify)</label><input type="text" class="form-control mt-2" id="globalStakeholdersOther" style="display: none;" name="global_stakeholders_other"></div>
+                        </div>
+                        <div class="mb-3">
+                           <label class="form-label">4.4 What specific outcomes or deliverables would you like to achieve? (Select all that apply)</label>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="global_deliverables" value="Comprehensive business plan"><label>Comprehensive business plan</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="global_deliverables" value="Market analysis report"><label>Market analysis report</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="global_deliverables" value="Partnership framework or MOU development"><label>Partnership framework or MOU development</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="global_deliverables" value="Regulatory or policy guidance"><label>Regulatory or policy guidance</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="global_deliverables" value="Financial or investment assessment"><label>Financial or investment assessment</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="global_deliverables" value="Implementation roadmap"><label>Implementation roadmap</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" onchange="toggleOther(this, 'globalDeliverablesOther')"><label>Other (please specify)</label><input type="text" class="form-control mt-2" id="globalDeliverablesOther" style="display: none;" name="global_deliverables_other"></div>
+                        </div>
+
+                        <h4>5. Regional or Market Context</h4>
+                        <div class="mb-3">
+                           <label class="form-label">5.1 Which regions or countries are highest priority for your organization?</label>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="priority_regions" value="North America"><label>North America</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="priority_regions" value="Latin America & Caribbean"><label>Latin America & Caribbean</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="priority_regions" value="Europe"><label>Europe</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="priority_regions" value="Middle East"><label>Middle East</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="priority_regions" value="Africa"><label>Africa</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="priority_regions" value="South Asia"><label>South Asia</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="priority_regions" value="East Asia"><label>East Asia</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="priority_regions" value="Oceania"><label>Oceania</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" onchange="toggleOther(this, 'globalPriorityCountriesOther')"><label>Specific countries (please specify)</label><input type="text" class="form-control mt-2" id="globalPriorityCountriesOther" style="display: none;" name="priority_regions_other"></div>
+                        </div>
+                        <div class="mb-3">
+                           <label class="form-label">5.2 Are there specific regulatory, cultural, or operational challenges we should be aware of?</label>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="globalSpecificChallenges" value="yes" onchange="toggleOther(this, 'globalSpecificChallengesDetails', true)"><label>Yes (please describe)</label><textarea class="form-control mt-2" id="globalSpecificChallengesDetails" style="display: none;" name="global_specific_challenges_details"></textarea></div>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="globalSpecificChallenges" value="no"><label>No</label></div>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="globalSpecificChallenges" value="Not sure"><label>Not sure</label></div>
+                        </div>
+                        <div class="mb-3">
+                           <label class="form-label">5.3 Do you currently collaborate with international agencies, ministries of health, or global NGOs?</label>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="globalCollaboration" value="yes" onchange="toggleOther(this, 'globalCollaborationDetails', true)"><label>Yes (please specify)</label><input type="text" class="form-control mt-2" id="globalCollaborationDetails" style="display: none;" name="global_collaboration_details"></div>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="globalCollaboration" value="no"><label>No</label></div>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="globalCollaboration" value="Occasionally"><label>Occasionally</label></div>
+                        </div>
+
+                        <h4>6. Additional Information</h4>
+                        <div class="mb-3">
+                           <label class="form-label">6.1 How do you define success for a global advisory engagement?</label>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="success_definition" value="Market expansion completed"><label>Market expansion completed</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="success_definition" value="Strong partnerships established"><label>Strong partnerships established</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="success_definition" value="Improved regulatory alignment"><label>Improved regulatory alignment</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="success_definition" value="Increased organizational capacity"><label>Increased organizational capacity</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="success_definition" value="Strengthened health system outcomes"><label>Strengthened health system outcomes</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" onchange="toggleOther(this, 'globalSuccessOther')"><label>Other (please specify)</label><input type="text" class="form-control mt-2" id="globalSuccessOther" style="display: none;" name="success_definition_other"></div>
+                        </div>
+                        <div class="mb-3">
+                           <label class="form-label">6.2 How did you hear about our firm?</label>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="globalHeardAbout" value="Referral"><label>Referral</label></div>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="globalHeardAbout" value="Online search"><label>Online search</label></div>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="globalHeardAbout" value="Industry event or conference"><label>Industry event or conference</label></div>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="globalHeardAbout" value="Publication or thought leadership"><label>Publication or thought leadership</label></div>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="globalHeardAbout" value="Social media"><label>Social media</label></div>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="globalHeardAbout" onchange="toggleOther(this, 'globalHeardAboutOther', true)" value="Other"><label>Other (please specify)</label><input type="text" class="form-control mt-2" id="globalHeardAboutOther" style="display: none;" name="global_heard_about_other"></div>
+                        </div>
+                        <div class="mb-3">
+                           <label class="form-label">6.3 Is there any other information you'd like to share before our initial consultation?</label>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="globalAddlInfo" value="yes" onchange="toggleOther(this, 'globalAddlInfoDetails', true)"><label>Yes (please provide details)</label><textarea class="form-control mt-2" id="globalAddlInfoDetails" style="display: none;" name="global_addl_info_details"></textarea></div>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="globalAddlInfo" value="no"><label>No</label></div>
+                        </div>
+                        <button type="button" class="btn btn-primary mt-3 questionnaire-next-btn" onclick="showStep('contactScreen')">Next</button>
+                     </div>
+
+                     <div id="pharmacyQuestionnaire" style="display: none;">
+                        <h3>Humanity Pharmacy Group Questionnaire</h3>
+                        
+                        <h4>1. Investor Profile</h4>
+                        <div class="mb-3">
+                           <label class="form-label">1.1 What is the name of your firm or investment group?</label>
+                           <input type="text" class="form-control" name="pharmacy_firm_name">
+                        </div>
+                        <div class="mb-3">
+                           <label class="form-label">1.2 What is your primary investment focus within healthcare? (Select one)</label>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="investmentFocus" value="Retail pharmacy"><label>Retail pharmacy</label></div>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="investmentFocus" value="Specialty pharmacy"><label>Specialty pharmacy</label></div>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="investmentFocus" value="Compounding pharmacy"><label>Compounding pharmacy</label></div>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="investmentFocus" value="Digital / e-pharmacy"><label>Digital / e-pharmacy</label></div>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="investmentFocus" value="Pharmacy benefit management (PBM)"><label>Pharmacy benefit management (PBM)</label></div>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="investmentFocus" value="Supply chain / distribution"><label>Supply chain / distribution</label></div>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="investmentFocus" onchange="toggleOther(this, 'investmentFocusOther', true)" value="Other"><label>Other</label><input type="text" class="form-control mt-2" id="investmentFocusOther" style="display: none;" name="investment_focus_other"></div>
+                        </div>
+                        <div class="mb-3">
+                           <label class="form-label">1.3 What stage of investment are you pursuing? (Select one)</label>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="investmentStage" value="Early-stage / venture"><label>Early-stage / venture</label></div>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="investmentStage" value="Growth equity"><label>Growth equity</label></div>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="investmentStage" value="Majority acquisition"><label>Majority acquisition</label></div>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="investmentStage" value="Turnaround / distressed asset"><label>Turnaround / distressed asset</label></div>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="investmentStage" value="Buy-and-build platform"><label>Buy-and-build platform</label></div>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="investmentStage" onchange="toggleOther(this, 'investmentStageOther', true)" value="Other"><label>Other</label><input type="text" class="form-control mt-2" id="investmentStageOther" style="display: none;" name="investment_stage_other"></div>
+                        </div>
+                        <div class="mb-3">
+                           <label class="form-label">1.4 Which regions or markets are you targeting for pharmacy investments? (Select all that apply)</label>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="pharmacy_markets" value="U.S. – National"><label>U.S. – National</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" onchange="toggleOther(this, 'usRegionalSpec', false)" name="pharmacy_markets" value="U.S. – Regional"><label>U.S. – Regional (specify)</label><input type="text" class="form-control mt-2" id="usRegionalSpec" style="display: none;" name="pharmacy_markets_us_regional"></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="pharmacy_markets" value="Canada"><label>Canada</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="pharmacy_markets" value="Europe"><label>Europe</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="pharmacy_markets" value="Middle East"><label>Middle East</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="pharmacy_markets" value="Asia-Pacific"><label>Asia-Pacific</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="pharmacy_markets" value="Latin America"><label>Latin America</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" onchange="toggleOther(this, 'pharmacyMarketsOther')" name="pharmacy_markets"><label>Other</label><input type="text" class="form-control mt-2" id="pharmacyMarketsOther" style="display: none;" name="pharmacy_markets_other"></div>
+                        </div>
+
+                        <h4>2. Investment Objectives</h4>
+                        <div class="mb-3">
+                           <label class="form-label">2.1 What are your short- and long-term goals related to pharmacy sector investments? (Select all that apply)</label>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="pharmacy_goals" value="Portfolio expansion"><label>Portfolio expansion</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="pharmacy_goals" value="Operational turnaround"><label>Operational turnaround</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="pharmacy_goals" value="Strategic consolidation"><label>Strategic consolidation</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="pharmacy_goals" value="Vertical integration"><label>Vertical integration</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="pharmacy_goals" value="Market entry"><label>Market entry</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="pharmacy_goals" value="Value creation and optimization"><label>Value creation and optimization</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" onchange="toggleOther(this, 'investmentGoalsOther')" name="pharmacy_goals"><label>Other</label><input type="text" class="form-control mt-2" id="investmentGoalsOther" style="display: none;" name="pharmacy_goals_other"></div>
+                        </div>
+                        <div class="mb-3">
+                           <label class="form-label">2.2 Are you currently evaluating a specific target or portfolio of assets?</label>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="evalTarget" value="yes" onchange="toggleOther(this, 'evalTargetDetails', true)"><label>Yes</label><input type="text" class="form-control mt-2" id="evalTargetDetails" style="display: none;" name="eval_target_details"></div>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="evalTarget" value="no"><label>No</label></div>
+                        </div>
+                        <div class="mb-3">
+                           <label class="form-label">2.3 What key outcomes are you seeking from advisory support? (Select all that apply)</label>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="advisory_outcomes" value="Market due diligence"><label>Market due diligence</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="advisory_outcomes" value="Operational benchmarking"><label>Operational benchmarking</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="advisory_outcomes" value="Valuation insights"><label>Valuation insights</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="advisory_outcomes" value="Risk assessment"><label>Risk assessment</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="advisory_outcomes" value="Post-acquisition integration support"><label>Post-acquisition integration support</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="advisory_outcomes" value="Strategic growth planning"><label>Strategic growth planning</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" onchange="toggleOther(this, 'advisoryOutcomesOther')" name="advisory_outcomes"><label>Other</label><input type="text" class="form-control mt-2" id="advisoryOutcomesOther" style="display: none;" name="advisory_outcomes_other"></div>
+                        </div>
+
+                        <h4>3. Areas of Advisory Interest</h4>
+                        <div class="mb-3">
+                           <label class="form-label">(Select all that apply)</label>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="pharmacy_advisory_areas" value="Market and competitive landscape analysis"><label>Market and competitive landscape analysis</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="pharmacy_advisory_areas" value="Target identification and due diligence support"><label>Target identification and due diligence support</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="pharmacy_advisory_areas" value="Operational and financial performance assessment"><label>Operational and financial performance assessment</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="pharmacy_advisory_areas" value="Regulatory and compliance risk evaluation"><label>Regulatory and compliance risk evaluation</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="pharmacy_advisory_areas" value="Supply chain and distribution efficiency review"><label>Supply chain and distribution efficiency review</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="pharmacy_advisory_areas" value="Digital and specialty pharmacy strategy"><label>Digital and specialty pharmacy strategy</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="pharmacy_advisory_areas" value="Integration planning for M&A transactions"><label>Integration planning for M&A transactions</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="pharmacy_advisory_areas" value="Value creation and post-investment growth strategy"><label>Value creation and post-investment growth strategy</label></div>
+                        </div>
+
+                        <h4>4. Target or Portfolio Insights</h4>
+                        <div class="mb-3">
+                           <label class="form-label">4.1 Are you currently focused on a specific pharmacy segment? (Select all that apply)</label>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="pharmacy_segment" value="Retail pharmacy"><label>Retail pharmacy</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="pharmacy_segment" value="Mail-order pharmacy"><label>Mail-order pharmacy</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="pharmacy_segment" value="Specialty pharmacy"><label>Specialty pharmacy</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="pharmacy_segment" value="Compounding pharmacy"><label>Compounding pharmacy</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="pharmacy_segment" value="Hospital outpatient pharmacy"><label>Hospital outpatient pharmacy</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" onchange="toggleOther(this, 'pharmacySegmentOther')" name="pharmacy_segment"><label>Other</label><input type="text" class="form-control mt-2" id="pharmacySegmentOther" style="display: none;" name="pharmacy_segment_other"></div>
+                        </div>
+                        <div class="mb-3">
+                           <label class="form-label">4.2 What key financial or operational metrics guide your investment decisions? (Select up to three)</label>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="investment_metrics" value="EBITDA margin"><label>EBITDA margin</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="investment_metrics" value="Script volume / growth"><label>Script volume / growth</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="investment_metrics" value="Revenue per script"><label>Revenue per script</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="investment_metrics" value="Payer/reimbursement mix"><label>Payer/reimbursement mix</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="investment_metrics" value="DIR fee exposure"><label>DIR fee exposure</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="investment_metrics" value="Operating cost structure"><label>Operating cost structure</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="investment_metrics" value="Supply chain efficiency"><label>Supply chain efficiency</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="investment_metrics" value="Workforce productivity"><label>Workforce productivity</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" onchange="toggleOther(this, 'metricsOther')" name="investment_metrics"><label>Other</label><input type="text" class="form-control mt-2" id="metricsOther" style="display: none;" name="investment_metrics_other"></div>
+                        </div>
+                        <div class="mb-3">
+                           <label class="form-label">4.3 Have you previously invested in pharmacy or related healthcare assets?</label>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="prevPharmacyInvest" value="yes" onchange="toggleOther(this, 'prevPharmacyDetails', true)"><label>Yes</label><input type="text" class="form-control mt-2" id="prevPharmacyDetails" style="display: none;" name="prev_pharmacy_details"></div>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="prevPharmacyInvest" value="no"><label>No</label></div>
+                        </div>
+
+                        <h4>5. Engagement Scope</h4>
+                        <div class="mb-3">
+                           <label class="form-label">5.1 What is your preferred level of engagement with our advisory team? (Select one)</label>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="engagementLevel" value="One-time due diligence engagement"><label>One-time due diligence engagement</label></div>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="engagementLevel" value="Multi-phase project (e.g., due diligence + integration)"><label>Multi-phase project (e.g., due diligence + integration)</label></div>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="engagementLevel" value="Ongoing strategic advisory partnership"><label>Ongoing strategic advisory partnership</label></div>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="engagementLevel" value="Portfolio support across multiple assets"><label>Portfolio support across multiple assets</label></div>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="engagementLevel" value="Other" onchange="toggleOther(this, 'engagementLevelOther', true)"><label>Other</label><input type="text" class="form-control mt-2" id="engagementLevelOther" style="display: none;" name="engagement_level_other"></div>
+                        </div>
+                        <div class="mb-3">
+                           <label class="form-label">5.2 What is your timeline for decision-making or closing transactions?</label>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="transactionTimeline" value="Immediate (0–30 days)"><label>Immediate (0–30 days)</label></div>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="transactionTimeline" value="Short-term (1–3 months)"><label>Short-term (1–3 months)</label></div>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="transactionTimeline" value="Mid-term (3–6 months)"><label>Mid-term (3–6 months)</label></div>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="transactionTimeline" value="Long-term (6+ months)"><label>Long-term (6+ months)</label></div>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="transactionTimeline" value="Flexible / TBD"><label>Flexible / TBD</label></div>
+                        </div>
+                        <div class="mb-3">
+                           <label class="form-label">5.3 Who will be the primary point of contact from your team?</label>
+                           <input type="text" class="form-control" name="pharmacy_contact_name">
+                        </div>
+
+                        <h4>6. Additional Information</h4>
+                        <div class="mb-3">
+                           <label class="form-label">6.1 Are there specific risks or uncertainties you would like addressed? (Select all that apply)</label>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="pharmacy_risks" value="Reimbursement pressures"><label>Reimbursement pressures</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="pharmacy_risks" value="PBM contracting challenges"><label>PBM contracting challenges</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="pharmacy_risks" value="Technology disruption"><label>Technology disruption</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="pharmacy_risks" value="Regulatory changes"><label>Regulatory changes</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="pharmacy_risks" value="Supply chain fragility"><label>Supply chain fragility</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" name="pharmacy_risks" value="Competitive threats"><label>Competitive threats</label></div>
+                           <div class="form-check"><input class="form-check-input" type="checkbox" onchange="toggleOther(this, 'risksOther')" name="pharmacy_risks"><label>Other</label><input type="text" class="form-control mt-2" id="risksOther" style="display: none;" name="pharmacy_risks_other"></div>
+                        </div>
+                        <div class="mb-3">
+                           <label class="form-label">6.2 How did you hear about our firm?</label>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="heardAboutPharmacy" value="Referral"><label>Referral</label></div>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="heardAboutPharmacy" value="Industry event or conference"><label>Industry event or conference</label></div>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="heardAboutPharmacy" value="Online search"><label>Online search</label></div>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="heardAboutPharmacy" value="Social media"><label>Social media</label></div>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="heardAboutPharmacy" value="Existing relationship"><label>Existing relationship</label></div>
+                           <div class="form-check"><input class="form-check-input" type="radio" name="heardAboutPharmacy" value="Other" onchange="toggleOther(this, 'heardAboutPharmacyOther', true)"><label>Other</label><input type="text" class="form-control mt-2" id="heardAboutPharmacyOther" style="display: none;" name="heard_about_pharmacy_other"></div>
+                        </div>
+                        <div class="mb-3">
+                           <label class="form-label">6.3 Is there any other information you would like us to know before our initial discussion?</label>
+                           <textarea class="form-control" name="pharmacy_additional_info"></textarea>
+                        </div>
+                        <button type="button" class="btn btn-primary mt-3 questionnaire-next-btn" onclick="showStep('contactScreen')">Next</button>
+                     </div>
+
+                     <div id="contactScreen" style="display: none;">
+                           <h3>Contact Information</h3>
+                           <div class="mb-3"><label class="form-label">A. Primary Contact Name</label><input type="text" class="form-control" name="contact_name"></div>
+                           <div class="mb-3">
+                              <label class="form-label">B. Title / Role</label>
+                              <div class="form-check"><input class="form-check-input" type="radio" name="title_role" value="Managing Partner"><label>Managing Partner</label></div>
+                              <div class="form-check"><input class="form-check-input" type="radio" name="title_role" value="Principal / Director"><label>Principal / Director</label></div>
+                              <div class="form-check"><input class="form-check-input" type="radio" name="title_role" value="Investment Associate / Analyst"><label>Investment Associate / Analyst</label></div>
+                              <div class="form-check"><input class="form-check-input" type="radio" name="title_role" value="Operating Partner"><label>Operating Partner</label></div>
+                              <div class="form-check"><input class="form-check-input" type="radio" name="title_role" value="Corporate Development Lead"><label>Corporate Development Lead</label></div>
+                              <div class="form-check"><input class="form-check-input" type="radio" name="title_role" value="Strategy Lead"><label>Strategy Lead</label></div>
+                              <div class="form-check"><input class="form-check-input" type="radio" name="title_role" onchange="toggleOther(this, 'titleRoleOther', true)"><label>Other</label><input type="text" class="form-control mt-2" id="titleRoleOther" style="display: none;" name="title_role_other"></div>
+                           </div>
+                           <div class="mb-3"><label class="form-label">C. Email Address</label><input type="email" class="form-control" name="email"></div>
+                           <div class="mb-3"><label class="form-label">D. Phone Number</label><input type="tel" class="form-control" name="phone"></div>
+                           <div class="mb-3">
+                              <label class="form-label">E. Preferred Method of Communication</label>
+                              <div class="form-check"><input class="form-check-input" type="radio" name="comm_method" value="Email"><label>Email</label></div>
+                              <div class="form-check"><input class="form-check-input" type="radio" name="comm_method" value="Phone"><label>Phone</label></div>
+                              <div class="form-check"><input class="form-check-input" type="radio" name="comm_method" value="Video call (Zoom / Teams)"><label>Video call (Zoom / Teams)</label></div>
+                              <div class="form-check"><input class="form-check-input" type="radio" name="comm_method" value="Messaging (WhatsApp / SMS)"><label>Messaging (WhatsApp / SMS)</label></div>
+                              <div class="form-check"><input class="form-check-input" type="radio" name="comm_method" value="Other" onchange="toggleOther(this, 'commMethodOther', true)"><label>Other</label><input type="text" class="form-control mt-2" id="commMethodOther" style="display: none;" name="comm_method_other"></div>
+                           </div>
+                           <div class="mb-3"><label class="form-label">F. Company Website</label><input type="text" class="form-control" name="company_website"></div>
+                           <div class="mb-3">
+                              <label class="form-label">G. Office Location / Headquarters</label>
+                              <div class="form-check"><input class="form-check-input" type="radio" name="location" value="U.S. — Northeast"><label>U.S. — Northeast</label></div>
+                              <div class="form-check"><input class="form-check-input" type="radio" name="location" value="U.S. — Southeast"><label>U.S. — Southeast</label></div>
+                              <div class="form-check"><input class="form-check-input" type="radio" name="location" value="U.S. — Midwest"><label>U.S. — Midwest</label></div>
+                              <div class="form-check"><input class="form-check-input" type="radio" name="location" value="U.S. — West"><label>U.S. — West</label></div>
+                              <div class="form-check"><input class="form-check-input" type="radio" name="location" value="Canada"><label>Canada</label></div>
+                              <div class="form-check"><input class="form-check-input" type="radio" name="location" value="Europe"><label>Europe</label></div>
+                              <div class="form-check"><input class="form-check-input" type="radio" name="location" value="Middle East"><label>Middle East</label></div>
+                              <div class="form-check"><input class="form-check-input" type="radio" name="location" value="Asia-Pacific"><label>Asia-Pacific</label></div>
+                              <div class="form-check"><input class="form-check-input" type="radio" name="location" value="Latin America"><label>Latin America</label></div>
+                              <div class="form-check"><input class="form-check-input" type="radio" name="location" onchange="toggleOther(this, 'locationOther', true)"><label>Other</label><input type="text" class="form-control mt-2" id="locationOther" style="display: none;" name="location_other"></div>
+                           </div>
+                           <button type="submit" class="btn btn-primary">Submit</button>
+                     </div>
+                  </form>
+               </div>
+         </div>
+      </div>
+   </main>
+
+   <!-- footer area start -->
+   <footer>
+      <div class="tp-footer__area black-bg">
+         <div class="tp-footer">
+
+          
+
+            <!-- main-footer start  -->
+            <div class="tp-footer__main">
+               <div class="container">
+                  <div class="tp-footer-border pt-60 pb-30">
+                     <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                           <div class="tp-footer__widget pb-30">
+                              <a href="contact-services.html">Contact Us</a>
+                              <p><a href="mailto:inquiry@humanityadvisorygroup.com">inquiry@humanityadvisorygroup.com</a></p>
+                           </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                           <div class="tp-footer__widget pb-30 text-lg-end">
+                              <h3 class="tp-footer__widget-title">Address</h3>
+                              <p>
+                                 971 US HIGHWAY 202N<br>
+                                 STE R<br>
+                                 BRANCHBURG, NEW JERSEY<br>
+                                 08876
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- main footer end  -->
+         </div>
+      </div>
+
+      <!-- footer copy right -->
+      <div class="top-footer-copyright pt-30 black-bg">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-8 col-12">
+                  <div class="tp-copyrigh-text mb-30">
+                     <span>© 2025 Humanity Advisory Group LLC.</span>
+                  </div>
+               </div>
+              
+            </div>
+         </div>
+      </div>
+      <!-- footer copyright end  -->
+   </footer>
+   <!-- footer area end -->
+
+
+   <!-- JS here -->
+   <script src="assets/js/vendor/jquery.js"></script>
+   <script src="assets/js/vendor/waypoints.js"></script>
+   <script src="assets/js/bootstrap-bundle.js"></script>
+   <script src="assets/js/meanmenu.js"></script>
+   <script src="assets/js/swiper-bundle.js"></script>
+   <script src="assets/js/slick.js"></script>
+   <script src="assets/js/magnific-popup.js"></script>
+   <script src="assets/js/parallax.js"></script>
+   <script src="assets/js/backtotop.js"></script>
+   <script src="assets/js/nice-select.js"></script>
+   <script src="assets/js/counterup.js"></script>
+   <script src="assets/js/wow.js"></script>
+   <script src="assets/js/isotope-pkgd.js"></script>
+   <script src="assets/js/imagesloaded-pkgd.js"></script>
+   <script src="assets/js/ajax-form.js"></script>
+   <script src="assets/js/main.js"></script>
+   <script>
+      function handleServiceSelection() {
+         const selectedService = document.querySelector('input[name="service"]:checked');
+         if (selectedService) {
+            if (selectedService.value === 'strategic') {
+               showStep('strategicQuestionnaire');
+            } else if (selectedService.value === 'facility') {
+               showStep('facilityQuestionnaire');
+            } else if (selectedService.value === 'global') {
+               showStep('globalQuestionnaire');
+            } else if (selectedService.value === 'pharmacy') {
+               showStep('pharmacyQuestionnaire');
+            } else {
+               // Placeholder for other questionnaires
+               alert('This questionnaire is not yet available');
+            }
+         } else {
+            alert('Please select a service.');
+         }
+      }
+
+      function showStep(stepId) {
+         document.getElementById('step1').style.display = 'none';
+         
+         // If showing contact screen, keep the current questionnaire visible but scroll past it
+         // Otherwise, hide all questionnaires and contact screen
+         if (stepId === 'contactScreen') {
+            document.getElementById('contactScreen').style.display = 'block';
+            // Hide all Next buttons when showing contact screen
+            document.querySelectorAll('.questionnaire-next-btn').forEach(btn => {
+               btn.style.display = 'none';
+            });
+         } else {
+            // Hide all questionnaires
+            document.getElementById('strategicQuestionnaire').style.display = 'none';
+            document.getElementById('facilityQuestionnaire').style.display = 'none';
+            document.getElementById('globalQuestionnaire').style.display = 'none';
+            document.getElementById('pharmacyQuestionnaire').style.display = 'none';
+            // Hide contact screen
+            document.getElementById('contactScreen').style.display = 'none';
+            
+            // Show the target questionnaire
+            document.getElementById(stepId).style.display = 'block';
+            // Show the Next button for this questionnaire
+            document.getElementById(stepId).querySelector('.questionnaire-next-btn').style.display = 'block';
+         }
+      }
+
+      function toggleOther(checkbox, otherId, isRadio = false) {
+         const otherInput = document.getElementById(otherId);
+         if (isRadio) {
+            otherInput.style.display = 'block';
+         } else {
+            otherInput.style.display = checkbox.checked ? 'block' : 'none';
+         }
+         if(otherInput.style.display === 'block'){
+            // uncheck other radio buttons if this one is for an 'other' text input
+            if(isRadio){
+               let radios = document.getElementsByName(checkbox.name);
+               for(let i=0; i<radios.length; i++){
+                  if(radios[i] !== checkbox){
+                     let otherInputId = radios[i].getAttribute('onchange');
+                     if(otherInputId && otherInputId.includes('toggleOther')){
+                        let id = otherInputId.split("'")[1];
+                        document.getElementById(id).style.display = 'none';
+                     }
+                  }
+               }
+            }
+         }
+      }
+
+      document.querySelectorAll('input[type="radio"][name="addContext"]').forEach(radio => {
+         radio.addEventListener('change', function() {
+               const details = document.getElementById('contextDetails');
+               if (this.value === 'yes') {
+                  details.style.display = 'block';
+               } else {
+                  details.style.display = 'none';
+               }
+         });
+      });
+
+      document.querySelectorAll('input[type="radio"][name="title_role"]').forEach(radio => {
+         radio.addEventListener('change', function() {
+               const other = document.getElementById('titleRoleOther');
+               if (this.getAttribute('onchange') && this.getAttribute('onchange').includes('titleRoleOther')) {
+                  other.style.display = 'block';
+               } else {
+                  other.style.display = 'none';
+               }
+         });
+      });
+      document.querySelectorAll('input[type="radio"][name="comm_method"]').forEach(radio => {
+         radio.addEventListener('change', function() {
+               const other = document.getElementById('commMethodOther');
+               if (this.getAttribute('onchange') && this.getAttribute('onchange').includes('commMethodOther')) {
+                  other.style.display = 'block';
+               } else {
+                  other.style.display = 'none';
+               }
+         });
+      });
+      document.querySelectorAll('input[type="radio"][name="location"]').forEach(radio => {
+         radio.addEventListener('change', function() {
+               const other = document.getElementById('locationOther');
+               if (this.getAttribute('onchange') && this.getAttribute('onchange').includes('locationOther')) {
+                  other.style.display = 'block';
+               } else {
+                  other.style.display = 'none';
+               }
+         });
+      });
+
+      // Handle form submission - remove names from hidden questionnaire fields
+      document.getElementById('inquiryForm').addEventListener('submit', function(e) {
+         // Find which questionnaire is visible
+         const visibleQuestionnaire = document.querySelector('#strategicQuestionnaire[style*="display: block"], #facilityQuestionnaire[style*="display: block"], #globalQuestionnaire[style*="display: block"], #pharmacyQuestionnaire[style*="display: block"]');
+         
+         // Get all questionnaire sections
+         const questionnaires = {
+            strategic: document.getElementById('strategicQuestionnaire'),
+            facility: document.getElementById('facilityQuestionnaire'),
+            global: document.getElementById('globalQuestionnaire'),
+            pharmacy: document.getElementById('pharmacyQuestionnaire')
+         };
+         
+         // Remove names from hidden questionnaire inputs
+         Object.entries(questionnaires).forEach(([key, section]) => {
+            if (section.style.display === 'none') {
+               const inputs = section.querySelectorAll('input, textarea, select');
+               inputs.forEach(input => {
+                  input.removeAttribute('name');
+               });
+            }
+         });
+         
+         // Proceed with normal form submission to FormSpree
+      });
+
+   </script>
+</body>
+
+</html>
